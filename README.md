@@ -1,7 +1,7 @@
 # ProgSystem-project
 First year of master degree project in System coding
 
-The goal of this project is to emulate a situation where a main server has computation capabilities that clients have not. Therefore the clients interact with the server using a shared memory object, allowing the server to make computation for them and send them the results afterwards. This project was made in C, with Marc Renard. It s aimed at Linux operating systems.
+The goal of this project is to emulate a situation where a main server has computation capabilities that clients have not. Therefore the clients interact with the server using a shared memory object, allowing the server to make computation for them and send them the results afterwards. This project was made in C, with @Marc-Renard. It s aimed at Linux operating systems.
 
 We recommand using gdb to run this project, especially since the computations made by server are fast and therefore the client won t interact with it very long.
 
