@@ -2,6 +2,8 @@
 #define PCOND
 
 #include <pthread.h>
+#include <string.h>
+#include <stdlib.h>
 
 int initialiser_cond(pthread_cond_t * pcond);
 
