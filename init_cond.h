@@ -19,4 +19,10 @@ typedef struct{
   int retourFonction; // 0 if everything s alright, -1 if not
 }memory; //Data are stored just after the header, as we overmap the shm for this purpose
 
+/*===================================================
+The prefix slash function, that allows to right the object path easier
+===================================================*/
+
+char *prefix_slash(const char* name);
+
 #endif
