@@ -32,4 +32,14 @@ void init_fun_tab()
   //to add a new function, first update NB_FUN, then include your header and update init_fun_tab to include the new function following the above format
 }
 
+int (*find_fun_ptr(const char *name)) (void*)
+{
+  for(int i = 0; i < NB_FUN; i++)
+  {
+    if(strcmp(fun_tab[i].fun_name,name) ==0)
+      return fun_tab[i].fun;
+  }
+  return NULL;
+}
+
 //to be continued
