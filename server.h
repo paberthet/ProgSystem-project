@@ -15,7 +15,7 @@ Header for the server part
 
 lpc_function fun_tab[NB_FUN];
 
-void init_fun_tab()
+void init_fun_tab()           //init of functions table
 {
   fptr f1 = &trunc;
   const lpc_function truncat = {"truncate", f1};
@@ -32,7 +32,7 @@ void init_fun_tab()
   //to add a new function, first update NB_FUN, then include your header and update init_fun_tab to include the new function following the above format
 }
 
-int (*find_fun_ptr(const char *name)) (void*)
+int (*find_fun_ptr(const char *name)) (void*) //check if a name is linked to a function inside the functions table
 {
   for(int i = 0; i < NB_FUN; i++)
   {
@@ -42,4 +42,5 @@ int (*find_fun_ptr(const char *name)) (void*)
   return NULL;
 }
 
-//to be continued
+void* lpc_create(const char* name, size_t capacity);
+int init_mutex(pthread_mutex_t* pmutex);
