@@ -5,8 +5,21 @@ Header for the server part
 #ifndef SERVER
 #define SERVER
 
-#define NAMELEN 48
+#include "init_cond.h"
+#include "lpc_type.h"
+#include "panic.h"
+#include "pthread_error.h"
 
+#include <fnctl.h>
+#include <sys/stat.h>
+#include <sys/type.h>
+#include <sys/mman.h>
+#include <signal.h>
+#include <errno.h>
+
+
+//#define NAMELEN 48 already define in lpc_type
+ 
 #define NB_FUN 3          //to be updated if you wish to add more functions
 //include new functions below
 #include "trunc.h"
