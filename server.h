@@ -61,5 +61,5 @@ int (*find_fun_ptr(const char *name)) (void*) //check if a name is linked to a f
   return NULL;
 }
 
-void* lpc_create(const char* name, size_t capacity);
+void* lpc_create(const char* mem_object, size_t capacity);
 int init_mutex(pthread_mutex_t* pmutex);
