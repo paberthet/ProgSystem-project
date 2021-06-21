@@ -1,6 +1,9 @@
-/*
+/*==================================================
 Header for the server part
-*/
+==================================================*/
+#ifndef LINUX
+#define XOPEN_SOURCE 500
+#endif
 
 #ifndef SERVER
 #define SERVER
@@ -19,7 +22,10 @@ Header for the server part
 
 
 //#define NAMELEN 48 already define in lpc_type
- 
+#define LEN 256
+#define CAPACITY 4096
+
+
 #define NB_FUN 3          //to be updated if you wish to add more functions
 //include new functions below
 #include "trunc.h"
